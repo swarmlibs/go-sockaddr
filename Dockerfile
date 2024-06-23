@@ -11,7 +11,7 @@ ADD https://github.com/hashicorp/go-sockaddr.git#${GO_SOCKADDR_VERSION} /hashico
 RUN <<EOT
     set -ex
     cd /hashicorp/go-sockaddr/cmd/sockaddr
-    go build -o /sockaddr
+    go build -o sockaddr
 EOT
 
 FROM scratch
